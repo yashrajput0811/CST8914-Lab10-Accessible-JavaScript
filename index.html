@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Focus</title>
+  <link href="CSS.css" rel="stylesheet" type="text/css">
+  <script src="JS.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <h1>Managing Keyboard Focus</h1>
+    <p>Instructions: Use 'up & down arrow keys' to navigate between menu items (need fix!), 'enter' to activate menu
+      item, 'escape' key to close menu.</p>
+    <h2>What to do:</h2>
+    <p>Apply roving index technique to programmatically manage the keyboard focus on the menu (on keys arrow up and
+      down).</p>
+    <div class="menu-button-actions">
+      <p>
+        <label>Pizza Choice:<br> <input class="action" id="action_output" type="text" value=""></label>
+      </p>
+      <button type="button" id="menubutton1" aria-haspopup="true" aria-controls="menu1">
+        Pizza Menu
+        <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+          <polygon points="1 0, 11 0, 6 8"></polygon>
+        </svg>
+      </button>
+
+      <ul id="menu1" role="menu" aria-labelledby="menubutton1">
+        <li role="menuitem">Pizza 1</li>
+        <li role="menuitem">Pizza 2</li>
+        <li role="menuitem">Pizza 3</li>
+        <li role="menuitem">Pizza 4</li>
+      </ul>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
